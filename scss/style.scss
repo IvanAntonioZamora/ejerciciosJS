@@ -1,0 +1,158 @@
+//variables-color
+$colorUno: #f6f5f2;
+$colorDos: #f0ebe3;
+$colorTres: #f3d0d7;
+$colorCuatro: #ffefef;
+$colorCinco: #fe0e721a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3d0d7;
+}
+.contenedor {
+  margin: 0 auto;
+  width: 90%;
+
+  .contacto {
+    background-color: $colorDos;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+
+    a {
+      text-decoration: none;
+      padding: 0px 5px;
+    }
+
+    a:link,
+    a:visited {
+      color: black;
+    }
+
+    a:hover {
+      color: black;
+      background-color: $colorTres;
+      border: 2px solid white;
+      border-radius: 3px;
+      padding: 1px 5px;
+      text-shadow: 1px 0px 1px white;
+    }
+  }
+
+  .fondo {
+    background-color: $colorCuatro;
+    text-align: center;
+
+    .logo {
+      padding: 5px 0px;
+
+      img {
+        height: 130px;
+      }
+    }
+  }
+
+  .nav {
+    background-color: $colorCuatro;
+    border-top: 2px dashed $colorCinco;
+    border-bottom: 2px dashed $colorCinco;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $colorUno;
+        height: 100%;
+        width: 100%;
+
+        li {
+          list-style: none;
+          font-size: 1.2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+          }
+
+          a:link,
+          a:visited {
+            text-shadow: 1px 1px 1px black;
+            color: $colorTres;
+          }
+
+          a:hover {
+            text-align: center;
+            font-size: 120%;
+          }
+        }
+      }
+    }
+  }
+
+  .item1 {
+    grid-area: carrusel;
+  }
+  .item2 {
+    grid-area: main;
+    background-color: $colorUno;
+
+    h3 {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .card_main {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+    }
+
+    .card_estilo{
+      margin-bottom: 10px;
+    }
+  }
+  .item3 {
+    grid-area: aside;
+    background-color: $colorUno;
+  }
+  .item4 {
+    grid-area: footer;
+    background-color: $colorDos;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "carrusel carrusel carrusel carrusel carrusel"
+      "main main main main aside"
+      "footer footer footer footer footer";
+    gap: 2px;
+    padding: 2px 0px;
+
+    #carouselIndex {
+      border: 3px solid $colorDos;
+      border-radius: 2px;
+    }
+  }
+}

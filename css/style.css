@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3d0d7;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 80%;
+}
+.contenedor .contacto {
+  background-color: #f0ebe3;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+.contenedor .contacto a {
+  text-decoration: none;
+  padding: 0px 5px;
+}
+.contenedor .contacto a:link,
+.contenedor .contacto a:visited {
+  color: black;
+}
+.contenedor .contacto a:hover {
+  color: black;
+  background-color: #f3d0d7;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 1px 5px;
+  text-shadow: 1px 0px 1px white;
+}
+.contenedor .fondo {
+  background-color: #ffefef;
+  text-align: center;
+}
+.contenedor .fondo .logo {
+  padding: 5px 0px;
+}
+.contenedor .fondo .logo img {
+  height: 130px;
+}
+.contenedor .nav {
+  background-color: #ffefef;
+  border-top: 2px dashed rgba(254, 14, 114, 0.1019607843);
+  border-bottom: 2px dashed rgba(254, 14, 114, 0.1019607843);
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .nav div {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contenedor .nav div ul {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f6f5f2;
+  height: 100%;
+  width: 100%;
+}
+.contenedor .nav div ul li {
+  list-style: none;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .nav div ul li a {
+  text-decoration: none;
+}
+.contenedor .nav div ul li a:link,
+.contenedor .nav div ul li a:visited {
+  text-shadow: 1px 1px 1px black;
+  color: #f3d0d7;
+}
+.contenedor .nav div ul li a:hover {
+  text-align: center;
+  font-size: 120%;
+}
+.contenedor .item1 {
+  grid-area: carrusel;
+}
+.contenedor .item2 {
+  grid-area: main;
+  background-color: #f6f5f2;
+}
+.contenedor .item2 h3 {
+  text-align: center;
+  padding: 10px;
+}
+.contenedor .item2 .card_main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.contenedor .item2 .card_estilo {
+  margin-bottom: 10px;
+}
+.contenedor .item3 {
+  grid-area: aside;
+  background-color: #f6f5f2;
+}
+.contenedor .item4 {
+  grid-area: footer;
+  background-color: #f0ebe3;
+}
+.contenedor .grid-container {
+  display: grid;
+  grid-template-areas: "carrusel carrusel carrusel carrusel carrusel" "main main main main aside" "footer footer footer footer footer";
+  gap: 2px;
+  padding: 2px 0px;
+}
+.contenedor .grid-container #carouselIndex {
+  border: 3px solid #f0ebe3;
+  border-radius: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
